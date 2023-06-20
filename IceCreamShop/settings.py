@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'IceCreamShop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ice_cream_shop_db',
+        'USER': 'ice_cream_shop_db_user',
+        'PASSWORD': 'not1234',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
